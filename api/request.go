@@ -16,7 +16,7 @@ type Options struct {
 	// Note: you can't mix this param with the sources param.
 	Category string
 
-	// A comma-seperated string of domains
+	// A comma-separated string of domains
 	// (eg bbc.co.uk, techcrunch.com, engadget.com) to restrict the search to
 	Domains string
 
@@ -42,7 +42,7 @@ type Options struct {
 	// Default: publishedAt
 	SortBy string
 
-	// A comma-seperated string of identifiers for the news sources or blogs you want headlines from.
+	// A comma-separated string of identifiers for the news sources or blogs you want headlines from.
 	// Use the /sources endpoint to locate these programmatically or look at the sources index.
 	// Note: you can't mix this param with the country or category params.
 	Sources string

@@ -19,7 +19,7 @@ var (
 // APIKeyHeader is the header key used when sending the API Token
 const APIKeyHeader = "X-Api-Key"
 
-// Client used to interect with the NewsAPI
+// Client used to interact with the NewsAPI
 type Client struct {
 
 	// BaseURL the base url of the NewsAPI

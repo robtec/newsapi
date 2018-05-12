@@ -32,5 +32,5 @@ func topHeadlines(c *cli.Context) error {
 
 	fmt.Print(resp)
 
-	return nil
+	return err
 }

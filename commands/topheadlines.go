@@ -15,6 +15,10 @@ func topHeadlines(c *cli.Context) error {
 	key := c.GlobalString("key")
 	url := c.GlobalString("url")
 
+	countryCode := c.String("c")
+
+	query := c.Args().Get(0)
+
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 	}
@@ -27,7 +31,7 @@ func topHeadlines(c *cli.Context) error {
 		return err
 	}
 
-	opts := api.Options{Country: "ie"}
+	opts := api.Options{Country: countryCode, Q: query}
 
 	resp, err := client.TopHeadlines(opts)
 

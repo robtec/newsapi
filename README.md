@@ -15,7 +15,7 @@ go install ./cmd/news
 ## CLI Usage
 
 ```bash
-$ news top // top headlines
+$ news top -c ie "Eurovision" // Checking if we won yet :P
 
 +--------------------------------+-------------------+
 |             TITLE              |      SOURCE       |
@@ -23,14 +23,6 @@ $ news top // top headlines
 | Watch: Stage invader snatches  | Independent.ie    |
 | microphone during UK's         |                   |
 | Eurovision performance         |                   |
-+--------------------------------+-------------------+
-| Kingston inspires epic Laois   | RTE               |
-| comeback against Wexford       |                   |
-+--------------------------------+-------------------+
-| Revealed: the overseas         | The Guardian (AU) |
-| anti-abortion activists using  |                   |
-| Facebook to target Irish       |                   |
-| voters                         |                   |
 +--------------------------------+-------------------+
 ...
 

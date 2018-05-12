@@ -21,7 +21,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "newsapi.org Golang client"
 	app.Usage = "a cli for newsapi.org"
-	app.UsageText = "news [global options] command [command options] [arguments...]"
+	app.UsageText = "news [global options] command [command options] <QUERY>"
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{

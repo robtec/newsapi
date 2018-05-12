@@ -1,6 +1,6 @@
 # NewsAPI Go
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/robtec/newsapi-go)](https://goreportcard.com/report/github.com/robtec/newsapi-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/robtec/newsapi-go)](https://goreportcard.com/report/github.com/robtec/newsapi-go) [![GoDoc](https://godoc.org/github.com/robtec/newsapi/api?status.svg)](https://godoc.org/github.com/robtec/newsapi/api)
 
 Golang client and library for https://newsapi.org
 

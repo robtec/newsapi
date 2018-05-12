@@ -1,10 +1,14 @@
 # NewsAPI Go
 
+Golang client and libraby for https://newsapi.org
+
 ## Install
 
-`go get github.com/robtec/newsapi`
+```bash
+go get github.com/robtec/newsapi`
 
-`go install ./cmd/news`
+go install ./cmd/news`
+```
 
 ## Build
 
@@ -12,7 +16,7 @@ Run `make build`
 
 ## CLI Usage
 
-```
+```bash
 $ news -h
 
 NAME:
@@ -39,11 +43,11 @@ GLOBAL OPTIONS:
 
 ## Library Usage
 
-```
+```golang
 package main
 
 import (
-    
+
 	"fmt"
 	"net/http"
 
@@ -66,5 +70,4 @@ func main() {
 
     fmt.Print(resp)
 }
-
 ```

@@ -56,15 +56,23 @@ func main() {
     key := "my-api-key"
     url := "https://newsapi.org"
 
+    query := "Elon Musk"
+
     // Create a client, passing in the above
     client, err := api.New(httpClient, key, url)
 
     // Create options for Ireland and Business
     opts := api.Options{Country: "ie", Category: "business"}
 
-    resp, err := client.TopHeadlines(opts)
+    // Get Top Headlines with options from above
+    topHeadlines, err := client.TopHeadlines(opts)
 
-    fmt.Print(resp)
+    // Different options
+    moreOpts := api.Options{Language: "en", Q: query, SortBy: "popularity"}
+
+     // Get Everything with options from above
+    everything, err := client.Everything(moreOpts)
+
 }
 ```
 

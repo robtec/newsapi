@@ -10,7 +10,9 @@ import (
 )
 
 var (
-	Version  = "0"
+	// Version placeholder for -v option
+	Version = "0"
+	// CommitId placeholder for -v option
 	CommitId = "0"
 )
 

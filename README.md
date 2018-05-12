@@ -1,5 +1,7 @@
 # NewsAPI Go
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/robtec/newsapi-go)](https://goreportcard.com/report/github.com/robtec/newsapi-go)
+
 Golang client and library for https://newsapi.org
 
 ## Install

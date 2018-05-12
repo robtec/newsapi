@@ -4,6 +4,7 @@ import (
 	"github.com/urfave/cli"
 )
 
+// Commands used by the CLI
 var Commands = []cli.Command{
 	{
 		Name:   "th",

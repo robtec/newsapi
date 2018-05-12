@@ -7,9 +7,9 @@ Golang client and library for https://newsapi.org
 ## Install
 
 ```bash
-go get github.com/robtec/newsapi
+$ go get github.com/robtec/newsapi
 
-go install ./cmd/news
+$ go install ./cmd/news
 ```
 
 ## CLI Usage
@@ -76,6 +76,7 @@ Checkout source
 
 $ mkdir -p $GOPATH/src/github.com/<your-username> && cd $_
 $ git clone https://github.com/robtec/newsapi-go.git
+
 $ cd newsapi
 
 $ make deps // install dependencies

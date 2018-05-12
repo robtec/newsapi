@@ -1,13 +1,13 @@
 # NewsAPI Go
 
-Golang client and libraby for https://newsapi.org
+Golang client and library for https://newsapi.org
 
 ## Install
 
 ```bash
-go get github.com/robtec/newsapi`
+go get github.com/robtec/newsapi
 
-go install ./cmd/news`
+go install ./cmd/news
 ```
 
 ## Build
@@ -70,4 +70,17 @@ func main() {
 
     fmt.Print(resp)
 }
+```
+
+## Contribution
+
+Checkout source
+
+```bash
+
+$ mkdir -p $GOPATH/src/github.com/<your-username> && cd $_
+$ git clone https://github.com/robtec/newsapi-go.git
+$ cd newsapi-go
+
+$ make deps // install dependencies
 ```

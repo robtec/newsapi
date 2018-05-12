@@ -78,7 +78,7 @@ Checkout source
 
 $ mkdir -p $GOPATH/src/github.com/<your-username> && cd $_
 $ git clone https://github.com/robtec/newsapi-go.git
-$ cd newsapi-go
+$ cd newsapi
 
 $ make deps // install dependencies
 ```

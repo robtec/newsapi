@@ -7,12 +7,12 @@ import (
 // Commands used by the CLI
 var Commands = []cli.Command{
 	{
-		Name:   "th",
+		Name:   "top",
 		Usage:  "top headlines",
 		Action: topHeadlines,
 	},
 	{
-		Name:   "e",
+		Name:   "everything",
 		Usage:  "everything",
 		Action: everything,
 	},

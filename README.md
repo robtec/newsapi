@@ -15,27 +15,25 @@ go install ./cmd/news
 ## CLI Usage
 
 ```bash
-$ news -h
+$ news top // top headlines
 
-NAME:
-   newsapi.org Golang client - a cli for newsapi.org
++--------------------------------+-------------------+
+|             TITLE              |      SOURCE       |
++--------------------------------+-------------------+
+| Watch: Stage invader snatches  | Independent.ie    |
+| microphone during UK's         |                   |
+| Eurovision performance         |                   |
++--------------------------------+-------------------+
+| Kingston inspires epic Laois   | RTE               |
+| comeback against Wexford       |                   |
++--------------------------------+-------------------+
+| Revealed: the overseas         | The Guardian (AU) |
+| anti-abortion activists using  |                   |
+| Facebook to target Irish       |                   |
+| voters                         |                   |
++--------------------------------+-------------------+
+...
 
-USAGE:
-   news [global options] command [command options] [arguments...]
-
-VERSION:
-   0.1 - 
-
-COMMANDS:
-     th       top headlines
-     e        everything
-     help, h  Shows a list of commands or help for one command
-
-GLOBAL OPTIONS:
-   --key value    API Key for Authentication [$NEWS_API_KEY]
-   --url value    Base API url (default: "https://newsapi.org")
-   --help, -h     show help
-   --version, -v  print the version
 ```
 
 

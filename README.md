@@ -10,10 +10,6 @@ go get github.com/robtec/newsapi
 go install ./cmd/news
 ```
 
-## Build
-
-Run `make build`
-
 ## CLI Usage
 
 ```bash
@@ -84,3 +80,5 @@ $ cd newsapi-go
 
 $ make deps // install dependencies
 ```
+
+Checkout the `Makefile` for extra development options

@@ -4,9 +4,7 @@ import (
 	"crypto/tls"
 	"net/http"
 	"os"
-	"time"
 
-	humanize "github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
 	"github.com/robtec/newsapi/api"
 	"github.com/urfave/cli"
@@ -53,9 +51,4 @@ func topHeadlines(c *cli.Context) error {
 	table.Render()
 
 	return err
-}
-
-func prettyTime(ugly string) string {
-	parsed, _ := time.Parse(time.RFC3339, ugly)
-	return humanize.Time(parsed)
 }

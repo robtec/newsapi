@@ -15,6 +15,9 @@ func everything(c *cli.Context) error {
 	key := c.GlobalString("key")
 	url := c.GlobalString("url")
 
+	language := c.String("l")
+	sortBy := c.String("s")
+
 	query := c.Args().Get(0)
 
 	tr := &http.Transport{
@@ -29,16 +32,21 @@ func everything(c *cli.Context) error {
 		return err
 	}
 
-	opts := api.Options{Q: query}
+	opts := api.Options{Q: query, Language: language, SortBy: sortBy}
 
 	resp, err := client.Everything(opts)
 
+	if err != nil {
+		return err
+	}
+
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"Title", "Source"})
+	table.SetHeader([]string{"Title", "Description", "Source", "Posted"})
 	table.SetRowLine(true)
 
 	for _, v := range resp.Articles {
-		table.Append([]string{v.Title, v.Source.Name})
+		prettyTime := prettyTime(v.PublishedAt)
+		table.Append([]string{v.Title, v.Description, v.Source.Name, prettyTime})
 	}
 
 	table.Render()

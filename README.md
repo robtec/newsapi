@@ -86,7 +86,7 @@ Checkout source
 ```bash
 
 $ mkdir -p $GOPATH/src/github.com/<your-username> && cd $_
-$ git clone https://github.com/robtec/newsapi-go.git
+$ git clone https://github.com/robtec/newsapi.git
 
 $ cd newsapi
 

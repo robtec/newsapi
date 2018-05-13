@@ -37,6 +37,8 @@ $ news top -c ie "Eurovision"
 
 ```
 
+See `news help` for more options
+
 
 ## Library Usage
 

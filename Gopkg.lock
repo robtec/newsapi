@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/dustin/go-humanize"
+  packages = ["."]
+  revision = "02af3965c54e8cacf948b97fef38925c4120652c"
+
+[[projects]]
   name = "github.com/mattn/go-runewidth"
   packages = ["."]
   revision = "9e777a8366cce605130a531d2cd6363d07ad7317"
@@ -22,6 +28,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d94ca1a2b2f9d156709dcfd21ac6a5744afb20e514f12e005bb5942cd2300245"
+  inputs-digest = "3e51c73d897cba4706930fc3919fa570d162e3c6d8d57c86b8b3903935253c77"
   solver-name = "gps-cdcl"
   solver-version = 1

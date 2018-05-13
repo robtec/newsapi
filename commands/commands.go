@@ -8,17 +8,18 @@ import (
 var Commands = []cli.Command{
 	{
 		Name:  "top",
-		Usage: "top headlines",
+		Usage: "Top Headlines",
 		Flags: []cli.Flag{
 			cli.StringFlag{
 				Name:  "c",
 				Usage: "Country",
+				Value: "ie",
 			}},
 		Action: topHeadlines,
 	},
 	{
 		Name:   "everything",
-		Usage:  "everything",
+		Usage:  "Everything",
 		Action: everything,
 	},
 }

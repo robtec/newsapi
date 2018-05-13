@@ -4,7 +4,9 @@ import (
 	"crypto/tls"
 	"net/http"
 	"os"
+	"time"
 
+	humanize "github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
 	"github.com/robtec/newsapi/api"
 	"github.com/urfave/cli"
@@ -40,14 +42,20 @@ func topHeadlines(c *cli.Context) error {
 	}
 
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"Title", "Source"})
+	table.SetHeader([]string{"Title", "Description", "Source", "Posted"})
 	table.SetRowLine(true)
 
 	for _, v := range resp.Articles {
-		table.Append([]string{v.Title, v.Source.Name})
+		prettyTime := prettyTime(v.PublishedAt)
+		table.Append([]string{v.Title, v.Description, v.Source.Name, prettyTime})
 	}
 
 	table.Render()
 
 	return err
+}
+
+func prettyTime(ugly string) string {
+	parsed, _ := time.Parse(time.RFC3339, ugly)
+	return humanize.Time(parsed)
 }

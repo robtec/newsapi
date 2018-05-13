@@ -14,16 +14,25 @@ $ go install ./cmd/news
 
 ## CLI Usage
 
-```bash
-$ news top -c ie "Eurovision" // Checking if we won yet :P
+You must register with News API to get an API Key
 
-+--------------------------------+-------------------+
-|             TITLE              |      SOURCE       |
-+--------------------------------+-------------------+
-| Watch: Stage invader snatches  | Independent.ie    |
-| microphone during UK's         |                   |
-| Eurovision performance         |                   |
-+--------------------------------+-------------------+
+https://newsapi.org/register
+
+
+```bash
+$ export NEWS_API_KEY=<YOUR-KEY>
+
+# Get the Top Headlines from Ireland, with 'Eurovision' as the Query
+$ news top -c ie "Eurovision"
+
++--------------------------------+--------------------------------+----------------+-------------+
+|             TITLE              |          DESCRIPTION           |     SOURCE     |   POSTED    |
++--------------------------------+--------------------------------+----------------+-------------+
+| How Ryan's Eurovision chutzpah | Didn't the heart nearly burst  | Independent.ie | 2 hours ago |
+| outfoxed us all                | out of my chest when the       |                |             |
+|                                | Portuguese gals chimed in      |                |             |
+|                                | unison                         |                |             |
++--------------------------------+--------------------------------+----------------+-------------+
 ...
 
 ```

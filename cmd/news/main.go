@@ -21,7 +21,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "newsapi.org Golang client"
 	app.Usage = "a cli for newsapi.org"
-	app.UsageText = "news [global options] command [command options] <QUERY>"
+	app.UsageText = "news [global opts] top | everything [command opts] <QUERY>"
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
@@ -33,6 +33,11 @@ func main() {
 			Name:  "url",
 			Usage: "Base API url",
 			Value: "https://newsapi.org",
+		},
+		cli.BoolFlag{
+			Name:   "k",
+			Usage:  "Skip SSL verify",
+			Hidden: true,
 		},
 	}
 

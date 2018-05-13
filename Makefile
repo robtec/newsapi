@@ -23,7 +23,7 @@ build: clean deps
 	@echo ">> building..."
 	@echo "Commit: $(COMMIT_ID)"
 	@echo "Version: $(VERSION)"
-	@gox -osarch $(OSARCH) -ldflags "-X main.Version=$(VERSION) -X main.CommitId=$(COMMIT_ID)" -output "$(DIST)/{{.OS}}_{{.Arch}}/$(BIN)" ./cmd/news
+	@gox -osarch $(OSARCH) -ldflags "-X main.Version=$(VERSION) -X main.CommitId=$(COMMIT_ID)" -output "$(DIST)/$(BIN)-{{.OS}}-{{.Arch}}" ./cmd/news
 
 install:
 	@go install -ldflags "-X main.Version=$(VERSION) -X main.CommitId=$(COMMIT_ID)" ./cmd/news

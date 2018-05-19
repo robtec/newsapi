@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/robtec/newsapi/cmd/news"
 
 import (
 	"fmt"
